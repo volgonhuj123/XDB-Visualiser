@@ -1,0 +1,115 @@
+﻿  Help.cpp
+  SelectElementList.cpp
+  XDB_visualiser.cpp
+C:\Users\Dawid\Desktop\NC++\XDB.cpp(179,42): warning C4311: "typ rzutowania": obcięcie wskaźnika z "unsigned char *" do "unsigned int"
+C:\Users\Dawid\Desktop\NC++\XDB.cpp(179,42): warning C4302: "typ rzutowania": obcięcie z "unsigned char *" do "unsigned int"
+C:\Users\Dawid\Desktop\NC++\XDB.cpp(270,58): warning C4267: "=": konwersja z "size_t" do "unsigned int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB.cpp(287,58): warning C4267: "=": konwersja z "size_t" do "unsigned int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB.cpp(431,8): warning C4101: "ptr_cast": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(131,30): warning C4267: "argument": konwersja z "size_t" do "long", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(325,6): warning C4101: "hScreen": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(479,15): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(480,14): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(481,14): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(499,48): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(502,14): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(503,14): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(504,14): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(521,47): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(541,12): warning C4244: "=": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(541,22): warning C4244: "=": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(597,15): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(597,25): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(597,35): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(597,45): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(619,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(619,34): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(619,56): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(620,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(620,34): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(620,56): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(657,18): warning C4244: "=": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(658,18): warning C4244: "=": konwersja z "unsigned int" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(826,45): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(827,47): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(828,47): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(829,48): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(886,45): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(887,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(888,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(889,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(944,45): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(945,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(946,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(947,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1002,45): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1003,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1004,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1005,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1061,45): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1062,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1063,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1064,49): warning C4244: "=": konwersja z "float" do "unsigned char", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1134,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1135,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1136,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1137,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1138,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1139,18): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1148,24): warning C4244: "=": konwersja z "float" do "unsigned int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1149,25): warning C4244: "=": konwersja z "float" do "unsigned int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1161,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1161,34): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1161,56): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1162,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1162,34): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1162,56): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1184,24): warning C4244: "=": konwersja z "float" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1185,24): warning C4244: "=": konwersja z "float" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1201,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1201,34): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1201,56): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1202,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1202,34): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1202,56): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1224,24): warning C4244: "=": konwersja z "float" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(1225,24): warning C4244: "=": konwersja z "float" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(130,70): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(146,90): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(161,90): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(267,86): warning C4474: „swprintf”: przekazano za dużo argumentów dla ciągu formatowania
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(267,86): message : symbole zastępcze i ich parametry oczekują 0 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 1
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(171,11): warning C4101: "ptr_cast": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(529,13): warning C4244: "inicjowanie": konwersja z "LONG" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(529,30): warning C4244: "inicjowanie": konwersja z "LONG" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(538,63): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(538,100): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(541,65): warning C4018: ">=": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(541,104): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(554,33): warning C4244: "=": konwersja z "LONG" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(558,31): warning C4244: "=": konwersja z "LONG" do "float", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1122,44): warning C4474: „swprintf”: przekazano za dużo argumentów dla ciągu formatowania
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1122,44): message : symbole zastępcze i ich parametry oczekują 0 argumentów ze zmienną liczbą argumentów, ale podano następującą liczbę zmiennych argumentów: 1
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1231,15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1399,27): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1400,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1534,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1535,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1734,48): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1359,10): warning C4102: "https": etykieta, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1288,18): warning C4101: "z": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1288,15): warning C4101: "y": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1329,20): warning C4101: "test_txt": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1288,12): warning C4101: "x": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1381,35): warning C4101: "gunwo": lokalna zmienna, do której nie istnieje odwołanie
+  Generowanie kodu...
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(73): warning C4715: "bmp24_read”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(105): warning C4715: "bmp24_savefile”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(183): warning C4715: "bmpv5_savefile”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Dawid\Desktop\NC++\bitmap.cpp(399): warning C4715: "bmp_glitch”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(47): warning C4715: "returnType”: niewszystkie ścieżki kodu zwracają wartość
+XDB_visualiser.obj : error LNK2005: Element "int __cdecl ESA_add_Elem(struct ES_Array *,unsigned int,unsigned int,unsigned int,unsigned int)" (?ESA_add_Elem@@YAHPEAUES_Array@@IIII@Z) jest już zdefiniowany w elemencie SelectElementList.obj
+XDB_visualiser.obj : error LNK2005: Element "void __cdecl ESA_free(struct ES_Array *)" (?ESA_free@@YAXPEAUES_Array@@@Z) jest już zdefiniowany w elemencie SelectElementList.obj
+XDB_visualiser.obj : error LNK2005: Element "int __cdecl ESA_insert_single(struct ES_Array *,unsigned int,unsigned int)" (?ESA_insert_single@@YAHPEAUES_Array@@II@Z) jest już zdefiniowany w elemencie SelectElementList.obj
+XDB_visualiser.obj : error LNK2005: Element "void __cdecl ESA_set(struct ES_Array *,unsigned int,unsigned int,unsigned int,unsigned int)" (?ESA_set@@YAXPEAUES_Array@@IIII@Z) jest już zdefiniowany w elemencie SelectElementList.obj
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\x64\Debug\XDB_visualiser.exe : fatal error LNK1169: znaleziono co najmniej jeden wielokrotnie zdefiniowany symbol
