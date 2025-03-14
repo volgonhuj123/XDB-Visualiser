@@ -1362,6 +1362,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     int refresh_highlight=0,last_highligted=0,highlight_innit=0;
     
     int file_change = 0;
+    int quick_mode = 0;
     memset(&r_highlight, 0, sizeof(RECT));
     memset(&r_last_highlight, 0, sizeof(RECT));
     while (GetMessage(&msg, nullptr, 0, 0)){
@@ -1425,10 +1426,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             last_down = clock();
         }
 
-        if (KEY_CHECK_STATE & GetAsyncKeyState(VK_F1)) {
-
-
-
+        if (KEY_CHECK_STATE & GetAsyncKeyState(VK_F2)) {
+            quick_mode ^= 1;
         }
 
         if ((num_of_files > 0) && (db_draw)) {
@@ -1438,7 +1437,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             slen = swprintf(info_visible, L"%u->%u/%u      ", start_y, start_y + 43, db[db_selected].r[relation_selected[db_selected]].data_count);
             DrawText(DC_window, info_visible, slen, &command_rect2, 0);
             //DC_buffer
-            if (!file_change) {
+            if (!file_change  && quick_mode) {
                 SetBkMode(DC_window, OPAQUE);
                 SetBkColor(DC_window, RGB(0, 0, 255));
                 if (refresh_highlight) {
@@ -1539,8 +1538,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                 }
                 
             }
-            SetBkMode(DC_window, TRANSPARENT);
-            SetBkColor(DC_window, RGB(255, 255, 255));
             }
             else {
                 memset(&r_highlight, 0, sizeof(RECT));
@@ -1554,7 +1551,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             command_rect2.top = 17;
             command_rect2.bottom = 51;
             SetBkMode(DC_window, TRANSPARENT);
-            SetBkColor(DC_window, RGB(255,255, 255));
+            SetBkColor(DC_window, RGB(0, 0, 255));
+            last_highligted = 0;
             db_rows = db[db_selected].r[relation_selected[db_selected]].data_count + 1 > 43 ? 43 : db[db_selected].r[relation_selected[db_selected]].data_count + 1;
             db_columns = db[db_selected].r[relation_selected[db_selected]].attribute_count > 13 ? 13 : db[db_selected].r[relation_selected[db_selected]].attribute_count;
             for (int y = 0; y < db_rows; y++) {
@@ -1564,6 +1562,19 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                     db_attribute_text_box[y * 13 + x].top = y * 866 / db_rows;
                     db_attribute_text_box[y * 13 + x].bottom = db_attribute_text_box[y * 13 + x].top + 866 / db_rows - 1;
                     if (y != 0) {
+                        py = y - 1;
+                        if (r_highlight.top- start_y <= py   && r_highlight.bottom- start_y >= py && r_highlight.left <= x && r_highlight.right >= x) {
+                            if (!last_highligted) {
+                                SetBkMode(DC_window, OPAQUE);
+                                last_highligted = 1;
+                            }
+                        }
+                        else {
+                            if (last_highligted) {
+                                SetBkMode(DC_window, TRANSPARENT);
+                                last_highligted = 0;
+                            }
+                        }
                         draw_text_box(DC_window, db, db_selected, relation_selected, y, x, start_y, &db_attribute_text_box[y * 13 + x]);
                     }
                     else {
@@ -1576,6 +1587,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                 BitBlt(DC_window, 204, (y + 1) * 866 / db_rows - 1, 1396, 1, DC_window, 0, 0, WHITENESS);
             }
             }
+            SetBkMode(DC_window, TRANSPARENT);
+            SetBkColor(DC_window, RGB(255, 255, 255));
             last_highligted = 0;
             db_draw = 0;
 

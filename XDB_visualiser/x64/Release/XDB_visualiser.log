@@ -1,5 +1,4 @@
-﻿  SelectElementList.cpp
-  XDB_visualiser.cpp
+﻿  XDB_visualiser.cpp
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB.cpp(169,42): warning C4311: "typ rzutowania": obcięcie wskaźnika z "unsigned char *" do "unsigned int"
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB.cpp(169,42): warning C4302: "typ rzutowania": obcięcie z "unsigned char *" do "unsigned int"
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB.cpp(258,58): warning C4267: "=": konwersja z "size_t" do "unsigned int", możliwa utrata danych
@@ -100,35 +99,35 @@ C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(130
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1309,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1315,131): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1320,94): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1438,43): warning C4477: „swprintf”: ciąg formatu „%u” wymaga argumentu typu „unsigned int”, ale argument 1 ze zmienną liczbą argumentów ma typ „size_t”
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1438,43): message : rozważ użycie elementu „%zu” w ciągu formatu
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1438,43): warning C4477: „swprintf”: ciąg formatu „%u” wymaga argumentu typu „unsigned int”, ale argument 2 ze zmienną liczbą argumentów ma typ „size_t”
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1438,43): message : rozważ użycie elementu „%zu” w ciągu formatu
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1439,70): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1447,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1449,148): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1456,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1458,146): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1465,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1467,147): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1474,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1476,148): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1491,49): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1492,38): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1507,134): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1520,39): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1535,135): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1560,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1561,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1567,135): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1572,98): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1617,62): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1618,65): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1624,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1628,31): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1633,57): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1637,62): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
-C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1712,48): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1437,43): warning C4477: „swprintf”: ciąg formatu „%u” wymaga argumentu typu „unsigned int”, ale argument 1 ze zmienną liczbą argumentów ma typ „size_t”
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1437,43): message : rozważ użycie elementu „%zu” w ciągu formatu
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1437,43): warning C4477: „swprintf”: ciąg formatu „%u” wymaga argumentu typu „unsigned int”, ale argument 2 ze zmienną liczbą argumentów ma typ „size_t”
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1437,43): message : rozważ użycie elementu „%zu” w ciągu formatu
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1438,70): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1446,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1448,148): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1455,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1457,146): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1464,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1466,147): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1473,49): warning C4267: "=": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1475,148): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1490,49): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1491,38): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1506,134): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1519,39): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1534,135): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1558,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1559,35): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1578,135): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1583,98): warning C4267: "argument": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1630,62): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1631,65): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1637,31): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1641,31): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1646,57): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1650,62): warning C4267: "=": konwersja z "size_t" do "LONG", możliwa utrata danych
+C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1725,48): warning C4018: ">": niezgodność typu ze znakiem/bez znaku
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1244,20): warning C4101: "test_txt": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1296,13): warning C4101: "f64_ptr": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\XDB_visualiser\XDB_visualiser.cpp(1356,13): warning C4101: "px": lokalna zmienna, do której nie istnieje odwołanie
@@ -141,7 +140,7 @@ XDB_visualiser.obj : warning LNK4006: element "void __cdecl ESA_free(struct ES_A
 XDB_visualiser.obj : warning LNK4006: element "int __cdecl ESA_add_Elem(struct ES_Array *,unsigned int,unsigned int,unsigned int,unsigned int)" (?ESA_add_Elem@@YAHPEAUES_Array@@IIII@Z) jest już zdefiniowany w elemencie SelectElementList.obj; druga definicja została zignorowana
 C:\Users\Dawid\Desktop\NC++\XDB_visualiser\x64\Release\XDB_visualiser.exe : warning LNK4088: obraz jest generowany ze względu na użycie opcji /FORCE; uruchomienie obrazu może nie być możliwe
   Trwa generowanie kodu
-  0 of 23 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  1 of 23 functions ( 4.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu
