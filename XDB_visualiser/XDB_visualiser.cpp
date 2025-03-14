@@ -1090,7 +1090,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     command_rect.bottom = 17;
     
 
-
     if (bmp_vertical_invert(&help[3])) {
         DrawText(DC_window, L"close_blocked memory allocation error", 37, &command_rect, 0);
         BitBlt(DC_window, 0, 0, 1600, 900 - 17, DC_window, 0, 17, SRCCOPY);
@@ -1149,13 +1148,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return -1;
     }
 
-    int* bb_buffer = (int*)malloc(sizeof(int) * 1396 * 845);
-    if (!bb_buffer) { return 1; }
-
-    memset(bb_buffer, 0, sizeof(int) * 1396 * 845);
-    HBITMAP HBMP = CreateBitmap(1600, 900, 1, 32,buffer.buffer),HBMP_bb = CreateBitmap(1396, 845, 1, 32, bb_buffer);
+    
+    HBITMAP HBMP = CreateBitmap(1600, 900, 1, 32,buffer.buffer);
     SelectObject(DC_bg_buffer, HBMP);
-    SelectObject(DC_back_buffer, HBMP_bb);
     srand(time(NULL));
 
     HBITMAP HBMP_close[3],HBMP_help[4],HBMP_save[4];
@@ -1319,7 +1314,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                         , db[db_selected].r[relation_selected[db_selected]].attribute_name[x]);
                     DrawText(DC_window, db_print, slen, &db_attribute_text_box[y * 13 + x], 0);
                 }
-                //swprintf(db_print,)
                 //vertical
                 BitBlt(DC_window, 204 + (x + 1) * 1396 / db_columns - 1, 0, 1, 866, DC_window, 0, 0, WHITENESS);
             }
@@ -1360,7 +1354,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     GetWindowRect(h_window, &r_wind);
     RECT r_highlight,r_last_highlight;
     int refresh_highlight=0,last_highligted=0,highlight_innit=0;
-    
+    int temp;
     int file_change = 0;
     int quick_mode = 0;
     memset(&r_highlight, 0, sizeof(RECT));
@@ -1389,10 +1383,18 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                 }
             }
             if (scroll > 0) {
-                slen = start_y;
-                start_y += scroll;
-                start_y = start_y + 43 > db[db_selected].r->data_count ? db[db_selected].r->data_count - 43 : start_y;
-                db_draw = slen != start_y;
+                if (start_y + db_rows + scroll <= db[db_selected].r->data_count) {
+                    slen = start_y;
+                    start_y += scroll;
+                    db_draw =1;
+                }
+                else {
+                    temp = db[db_selected].r->data_count - db_rows;
+                    start_y = temp;
+                    db_draw = 1;
+                }
+                
+                
             }
         }
         
@@ -1433,9 +1435,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         if ((num_of_files > 0) && (db_draw)) {
             //43 =(int) 866/20
             //13=(int) 1396/100
-            BitBlt(DC_window, 0, 17, 200, 34, DC_bg_buffer, 0, 17, SRCCOPY);
-            slen = swprintf(info_visible, L"%u->%u/%u      ", start_y, start_y + 43, db[db_selected].r[relation_selected[db_selected]].data_count);
-            DrawText(DC_window, info_visible, slen, &command_rect2, 0);
+           
             //DC_buffer
             if (!file_change  && quick_mode) {
                 SetBkMode(DC_window, OPAQUE);
@@ -1479,6 +1479,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                     }
                 }
                 last_highligted = 0;
+                memcpy(&r_highlight, &r_last_highlight, sizeof(r_highlight));
                 SetBkMode(DC_window, TRANSPARENT);
                 SetBkColor(DC_window, RGB(255,255,255));
             if(scroll>0){
@@ -1486,7 +1487,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                py = scroll *( 866 / db_rows);
                BitBlt(DC_window, 204,20, 1396, 846-py, DC_window, 204,20+py, SRCCOPY);
                BitBlt(DC_window, 204, 866 - py, 1396,  py, 0, 0,0, BLACKNESS);
-               memcpy(&r_highlight, &r_last_highlight, sizeof(r_highlight));
+              memcpy(&r_last_highlight, &r_highlight, sizeof(r_highlight));
                for (int y = db_rows - scroll; y < db_rows; y++) {
                    for (int x = 0; x < db_columns; x++) {
                        if (r_highlight.top <= y + start_y && r_highlight.bottom >= y + start_y && r_highlight.left <= x && r_highlight.right >= x) {
@@ -1540,11 +1541,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             }
             }
             else {
-                memset(&r_highlight, 0, sizeof(RECT));
-                memset(&r_last_highlight, 0, sizeof(RECT));
+                //memset(&r_highlight, 0, sizeof(RECT));
+                //memset(&r_last_highlight, 0, sizeof(RECT));
                 file_change = 0;
             BitBlt(DC_window, 204, 0, 1396, 866, 0, 0, 0, BLACKNESS);
-            memset(db_print, 0, 176 * SWCHAR);
+            memset(db_print, 0, 400 * SWCHAR);
             memset(db_attribute_text_box, 0, sizeof(RECT)* 13 * 43);
             command_rect2.left = 0;
             command_rect2.right = 200;
@@ -1562,10 +1563,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                     db_attribute_text_box[y * 13 + x].top = y * 866 / db_rows;
                     db_attribute_text_box[y * 13 + x].bottom = db_attribute_text_box[y * 13 + x].top + 866 / db_rows - 1;
                     if (y != 0) {
-                        py = y - 1;
-                        if (r_highlight.top- start_y <= py   && r_highlight.bottom- start_y >= py && r_highlight.left <= x && r_highlight.right >= x) {
+                        py = y - 1+ start_y;
+                        if (r_highlight.top <= py   && r_highlight.bottom >= py && r_highlight.left <= x && r_highlight.right >= x) {
                             if (!last_highligted) {
                                 SetBkMode(DC_window, OPAQUE);
+                                SetBkColor(DC_window, RGB(0, 0, 255));
                                 last_highligted = 1;
                             }
                         }
@@ -1591,7 +1593,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             SetBkColor(DC_window, RGB(255, 255, 255));
             last_highligted = 0;
             db_draw = 0;
-
+            BitBlt(DC_window, 0, 17, 200, 34, DC_bg_buffer, 0, 17, SRCCOPY);
+            slen = swprintf(info_visible, L"%u->%u/%u      ", start_y, start_y + db_rows-1, db[db_selected].r[relation_selected[db_selected]].data_count-1);
+            DrawText(DC_window, info_visible, slen, &command_rect2, 0);
         }
         if(filename_list_change || (db_draw)){
             BitBlt(DC_window, 0, 0, 204, 846, DC_bg_buffer, 0, 0, SRCCOPY);
@@ -1613,10 +1617,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             filename_list_change = 0;
             db_draw = 1;
         }
-
-
-
-
             gRB_return = getReturnButton(&cursor_pos, &r_wind, &buffer, &num_rect, &db[db_selected], &r_wind, db_columns, db_rows);
             if ((gRB_return & 0xff)==0xff) {
                 xy[0] = (gRB_return & 0xff00)>>8;
@@ -1727,6 +1727,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                         filename_list_change = 1;
                         last_db_selected = db_selected;
                         file_change = 1;
+                        start_y = 0;
                     }
                 }
                 last_lmb = clock();

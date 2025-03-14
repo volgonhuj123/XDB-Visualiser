@@ -1,1 +1,1 @@
-XDB_visualiser.exe output.xdb output0.xdb output1.xdb output2.xdb output3.xdb output4.xdb huj
+XDB_visualiser.exe output.xdb output0.xdb output1.xdb output2.xdb output3.xdb output4.xdb new_db.xdb

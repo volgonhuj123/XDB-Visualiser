@@ -118,11 +118,11 @@ byte* retreive_type(const char* type...) {
 }
 
 
-int Relation_build(Relation* r, const char* name, UINT attribute_count...) {
+int Relation_build(Relation* r, const char* name,UINT attribute_count...) {
 	va_list argptr;
 	va_start(argptr, attribute_count);
 	memset(r, 0, SRELATION);
-
+	UINT data_size = 0;
 	const char* temp_attribute_name = 0;
 	unsigned int varchar_size=0;
 	r->name_size =(UINT) strlen(name);
@@ -145,15 +145,18 @@ int Relation_build(Relation* r, const char* name, UINT attribute_count...) {
 	if (r->attribute_name_size == 0) {
 		return 1;
 	}
-	
+
 	r->attribute_data_type = (byte**)malloc(PTRSIZE*attribute_count);
 	if (r->attribute_data_type == 0) {
 		return 1;
 	}
+
 	r->attribute_data = (void**)malloc(PTRSIZE * attribute_count);
 	if (r->attribute_data == 0) {
 		return 1;
 	}
+	memset(r->attribute_data, 0, PTRSIZE * attribute_count);
+
 	for (size_t i = 0; i < attribute_count; i++) {
 		temp_attribute_name = va_arg(argptr,const char*);
 		r->attribute_name_size[i] =(UINT) strlen(temp_attribute_name);
@@ -169,11 +172,10 @@ int Relation_build(Relation* r, const char* name, UINT attribute_count...) {
 		switch ((UINT)r->attribute_data_type[i]) {
 		case 0:
 			return 1;
-			break;
 		case 1:
 			return 2;
-			break;
 		}
+
 	}
 	return 0;
 }
@@ -203,9 +205,7 @@ void DB_free(DataBase* db) {
 }
 
 int Relation_insert(Relation* r ,va_list* arg_ptr) {
-	//va_start(*arg_ptr, arg_ptr);
 	const UINT new_count = r->data_count + 1;
-
 	char* copy_text = 0;
 	const char * text = 0;
 	UINT text_size = 0;
@@ -214,7 +214,6 @@ int Relation_insert(Relation* r ,va_list* arg_ptr) {
 	UINT* u32_attribute_data;
 	ustr* ustr_attribute_data;
 	UINT max_length = 0;
-	
 	for (size_t i = 0; i < r->attribute_count; i++) {
 		switch (r->attribute_data_type[i][0]) {
 		case 'u':
@@ -242,8 +241,8 @@ int Relation_insert(Relation* r ,va_list* arg_ptr) {
 			if (f64_attribute_data == 0) {
 				return 1;
 			}
-			memcpy(f64_attribute_data, r->attribute_data[i], 4 * r->data_count);
-			f64_attribute_data[r->data_count] = va_arg(*arg_ptr, UINT);
+			memcpy(f64_attribute_data, r->attribute_data[i], 8* r->data_count);
+			f64_attribute_data[r->data_count] = va_arg(*arg_ptr, double);
 			free(r->attribute_data[i]);
 			r->attribute_data[i] = f64_attribute_data;
 			break;
@@ -282,9 +281,7 @@ int Relation_insert(Relation* r ,va_list* arg_ptr) {
 			r->attribute_data[i] = ustr_attribute_data;
 			break;
 		}
-
 	}
-
 	r->data_count = new_count;
 	return 0;
 }
@@ -382,7 +379,7 @@ int DB_relation_insert(DataBase* db, const char* relation_name...) {
 			}
 		}
 	}
-	return 5;
+	return 0;
 }
 int DB_relation_insert_n(DataBase* db, const char* relation_name,UINT relation_name_size...) {
 	va_list arg_ptr;
